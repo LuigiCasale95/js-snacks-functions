@@ -9,20 +9,22 @@ let newArray = [] //nuovo array
 // Dichiara la funzione qui.
 //creo una funzione che permetta di aggiungere un array
 function arrayForLetter (userLetter, array) {
-let newArray = [];//creazione array vuoto
+    let newArray = [];//creazione array vuoto
 
-for (let i = 0; i < array.length; i++) { //creazione ciclo
+    for (let i = 0; i < array.length; i++) { //creazione ciclo
 
-    /* Se la prima lettera = a scelta utente allora push in newArray */
-    firstLetter = array[i].charAt(0)
-    console.log(firstLetter);
-
-    if (firstLetter === userLetter) {
-        newArray.push(array[i])
+        /* Se la prima lettera = a scelta utente allora push in newArray */
+        firstLetter = array[i].charAt(0)
+/*         console.log('confronto',firstLetter,userLetter);
+ */
+        if (firstLetter === userLetter) {
+            /* console.log('indice',i);
+            console.log('valore',array[i]); */
+            newArray.push(array[i])         
+        }
+        
     }
-    
     return newArray
-}
 
 }
 
