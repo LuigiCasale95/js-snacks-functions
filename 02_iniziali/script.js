@@ -4,6 +4,11 @@ const names = ["Anna", "Luca", "Marco", "Adele", "Giovanni", "Alessandra"];
 
 
 // Dichiara la funzione qui.
+function ArrayFirstCapital(array) {
+    let newArray = []
+     
+
+}
 
 
 // Invoca la funzione qui e stampa il risultato in console
