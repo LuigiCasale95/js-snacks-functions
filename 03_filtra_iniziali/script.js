@@ -4,10 +4,11 @@ const names = ["Anna", "Luca", "Marco", "Adele", "Laura", "Alessandra"];
 let userLetter = prompt("Inserisci una lettera per cercare i nomi presenti nella lista").toUpperCase();
 console.log(`Lettera scelta dall'utente ${userLetter}`)
 
+let newArray = [] //nuovo array
 
 // Dichiara la funzione qui.
 //creo una funzione che permetta di aggiungere un array
-function arrayForLetter (array) {
+function arrayForLetter (userLetter, array) {
 let newArray = [];//creazione array vuoto
 
 for (let i = 0; i < array.length; i++) { //creazione ciclo
@@ -27,7 +28,8 @@ for (let i = 0; i < array.length; i++) { //creazione ciclo
 
 // Invoca la funzione qui e stampa il risultato in console
 
-arrayForLetter(names)
+newArray.push(arrayForLetter(userLetter, names))
+console.log(newArray)
 
 
 //Risultato atteso se si passa la lettera A: ["Anna", "Adele", "Alessandra"]
